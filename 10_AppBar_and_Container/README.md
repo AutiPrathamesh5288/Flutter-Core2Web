@@ -69,4 +69,5 @@ centre of the body create a blue container with (width: 360, height: 200).
 <br>
 
 10. In the screen, add a container with size (width: 300,height:300). Give colour to the container. Make container’s top-left and bottom-right corners rounded with radius 20.
+
 ![text](Question10.png)
