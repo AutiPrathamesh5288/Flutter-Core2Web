@@ -11,6 +11,6 @@ Assignment 1 : Simple
 <br>
 <br>
 
-Assignment 2 : Advanced
+Assignment 2 : Advanced By Toggle
 
 In The Progress

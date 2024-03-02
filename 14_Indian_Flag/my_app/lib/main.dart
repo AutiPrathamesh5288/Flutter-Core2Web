@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Assignment1(),
-      home: Assignment2(),
+      // home: Assignment2(),
 
     );
   }
