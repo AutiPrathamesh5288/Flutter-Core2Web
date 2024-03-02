@@ -7,98 +7,116 @@ class Assignment1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[50],
-      appBar: AppBar(
-        title: const Text(
-          "Indian Flag",
-          style: TextStyle(color: Colors.white),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Indian Flag"),
+          centerTitle: true,
+          backgroundColor: Colors.orange,
         ),
-        backgroundColor: Colors.orange[700],
-      ),
-      body: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+        body: Container(
+          padding: const EdgeInsets.only(top: 20),
+          color: Colors.grey[300],
+          child: Column(
             children: [
-              Column(
-                // mainAxisSize: MainAxisSize.values[520],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(
-                    height: 30,
-                  ),
                   Container(
-                    width: 15,
                     height: 500,
-                    // color: Colors.brown,
+                    width: 20,
                     decoration: const BoxDecoration(
-                      color: Colors.brown,
-                      borderRadius: BorderRadiusDirectional.only(
-                        topStart: Radius.circular(5),
-                        topEnd: Radius.circular(5),
-                      )
+                      color: Colors.black87,
+                      borderRadius: BorderRadius.only(
+                        topLeft:Radius.circular(7),
+                        topRight: Radius.circular(7),
+                        )
                     ),
                   ),
-                ],
-              ),
-              Column(
-                // mainAxisSize: MainAxisSize.values[520],
-                children: [
-                  const SizedBox(
-                    height: 35,
-                  ),
-                  Container(
-                    height: 66.66,
-                    width: 300,
-                    color: Colors.orange[900],
-                  ),
-                  Container(
-                      height: 66.66,
-                      width: 300,
-                      color: Colors.white,
-                      child: Image.network(
-                        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Spinning_Ashoka_Chakra.gif"
+                  Column(
+                    children: [
+                      const SizedBox(
+                        height: 10,
                       ),
-                  ),
-                  Container(
-                    height: 66.66,
-                    width: 300,
-                    color: Colors.green[800],
-                  ),
-                  const SizedBox(
-                    height: 285,
+                      Container(
+                        height: 57,
+                        width: 250,
+                        color: Colors.deepOrangeAccent,
+                      ),
+                      Container(
+                        height: 57,
+                        width: 250,
+                        color: Colors.white,
+                        child: Image.network(
+                            "https://upload.wikimedia.org/wikipedia/commons/e/e4/Spinning_Ashoka_Chakra.gif"),
+                      ),
+                      Container(
+                        height: 57,
+                        width: 250,
+                        color: Colors.green,
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ],
-          ),
-          Row(
-            children: [
-              const SizedBox(
-                width: 17,
-              ),
-              Column(
+              Row(
                 children: [
                   Container(
-                    width: 60,
-                    height: 10,
-                    color: Colors.grey[500],
-                  ),
-                  Container(
-                    width: 70,
-                    height: 10,
-                    color: Colors.grey[500],
-                  ),
-                  Container(
-                    width: 80,
-                    height: 10,
-                    color: Colors.grey[500],
-                  ),
+                    padding:const EdgeInsets.only(left: 20),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 20,
+                          width: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.brown,
+                            border: Border.all(
+                              color: Colors.black
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 20,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.brown,
+                            border: Border.all(
+                              color: Colors.black
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(7),
+                              topRight: Radius.circular(7),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 20,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.brown,
+                            border: Border.all(
+                              color: Colors.black
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
-              ),
+              )
             ],
           ),
-        ],
+        ),
       ),
     );
   }
